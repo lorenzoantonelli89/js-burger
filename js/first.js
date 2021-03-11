@@ -42,4 +42,21 @@ calculateBtn.addEventListener('click', function(){
 
   document.getElementById('price').innerHTML = totalPrice;
 
-})
+});
+
+var listClick = document.getElementsByTagName('li');
+
+  for (var i = 0; i < listClick.length; i++) {
+
+    var singleLi = listClick[i];
+
+    singleLi.addEventListener('click', function(){
+
+        var clickedLi = this;
+        var clickedLiChildrens = clickedLi.children;
+        var clickedCheckbox = clickedLiChildrens[2];
+
+        clickedCheckbox.checked = !clickedCheckbox.checked;
+    });
+
+  }
