@@ -30,12 +30,24 @@ header{
   align-items: center;
   background-color: #fdbb40;
   height: 140px;
+  position: relative;
+}
+
+header>img{
+  position: absolute;
+  top: -30px;
+  right: -50px;
 }
 
 /* regole main */
 main{
   background-color: #fff;
   padding: 40px 0;
+}
+
+#burgername{
+  border: none;
+  font-size: 20px;
 }
 
 /* regole lista */
@@ -62,11 +74,14 @@ main{
 }
 
 .content-list li>input{
-  background-color: #bc3b59;
-  border: none;
+
 }
 
+
 /* regole calcolator */
+.content-totalcal{
+  margin-top: 20px;
+}
 
 .content-totalcal>div{
   display: flex;
@@ -92,15 +107,15 @@ main{
 
 /* regole footer */
 footer{
-  height: 100px;
   background-color: #bc3b59;
   color: #fff;
 }
 
 .content-price{
+  height: 100px;
   display: flex;
   justify-content: space-between;
-  line-height: 100px;
+  align-items: center;
 }
 
 .content-price>span{

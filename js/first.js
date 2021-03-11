@@ -11,6 +11,7 @@ calculateBtn.addEventListener('click', function(){
 
   }else {
     var totalPrice = 6;
+
     var checkboxs = document.getElementsByClassName('ingredient');
 
       for (var i = 0; i < checkboxs.length; i++) {
@@ -26,21 +27,19 @@ calculateBtn.addEventListener('click', function(){
       }
   }
 
-  var couponInsert = document.getElementById('coupon');
+  var couponInsert = document.getElementById('coupon').value;
   var arrCoupon = ['mcdonald', 'fiveguys', 'burgerking'];
 
   for (var i = 0; i < arrCoupon.length; i++) {
     var couponOk = arrCoupon[i];
 
     if (couponInsert == couponOk) {
-      totalPrice = (totalPrice / 100 * 20);
+      totalPrice = (totalPrice / 100 * 80).toFixed(2);
 
     }
+
   }
-  console.log(totalPrice);
 
-
-
-
+  document.getElementById('price').innerHTML = totalPrice;
 
 })
