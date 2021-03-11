@@ -1,0 +1,73 @@
+/* regole generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #fdf5e4;
+}
+
+.center{
+  width: 40%;
+  margin: 0 auto;
+}
+
+.marginlf{
+  margin-left: 10%;
+}
+
+/* regole header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdbb40;
+  height: 140px;
+}
+
+/* regole main */
+main{
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+/* regole lista */
+.content-list>h3{
+  margin: 20px 0;
+}
+.content-list>ul{
+  list-style-type: none;
+  column-count: 2;
+}
+
+.content-list li{
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.content-list li>img{
+  width: 50px;
+}
+
+.content-list li>span{
+  padding: 0 20px;
+}
+
+/* regole footer */
+footer{
+  min-height: 100px;
+  background-color: #bc3b59;
+  color: #fff;
+}
+
+.content-price{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-price>div{
+  margin-right: 8%;
+}
