@@ -63,6 +63,7 @@ main{
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .content-list li>img{
@@ -74,7 +75,7 @@ main{
 }
 
 .content-list li>input{
-pointer-events: none;
+ pointer-events: none;
 }
 
 
@@ -89,10 +90,15 @@ pointer-events: none;
   margin-top: 25px;
 }
 
+label[for=coupon]{
+  font-size: 20px;
+  font-weight: bold;
+}
+
 #coupon{
   width: 70%;
   margin-left: 2%;
-  padding: 6px 10px;
+  padding: 10px 10px;
   border: none;
   border-radius: 5px;
   background-color: #fdf5e4;
@@ -106,6 +112,12 @@ pointer-events: none;
   border-radius: 10px;
   background-color: #efba54;
   outline: none;
+  cursor: pointer;
+}
+
+#calculate:hover{
+  background-color: #bc3b59;
+  color: #fff;
 }
 
 /* regole footer */
@@ -121,8 +133,9 @@ footer{
   align-items: center;
 }
 
-.content-price>span{
-  display: block;
+.content-price span{
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .content-price>div{
