@@ -56,6 +56,26 @@ main{
   padding: 0 20px;
 }
 
+/* regole calcolator */
+
+.content-totalcal>div{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#coupon{
+  margin-left: 2%;
+  width: 70%;
+}
+
+#calculate{
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #efba54;
+}
+
 /* regole footer */
 footer{
   min-height: 100px;

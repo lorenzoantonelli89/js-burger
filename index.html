@@ -16,7 +16,7 @@
 
     <!-- corpo pagina -->
     <main class="center">
-      <input class="marginlf" type="text" name="" value="" placeholder="Name Your Burger">
+      <input id="burgername" class="marginlf" type="text" name="" value="" placeholder="Name Your Burger">
       <div class="content-list marginlf">
         <h3>
           Ingredients
@@ -27,7 +27,7 @@
             <span>
               Cheese
             </span>
-            <input type="checkbox" data-value="2">
+            <input type="checkbox" data-price="2">
             <span>
               add
             </span>
@@ -37,7 +37,7 @@
             <span>
               Egg
             </span>
-            <input type="checkbox" data-value="2">
+            <input type="checkbox" data-price="2">
             <span>
               add
             </span>
@@ -47,7 +47,7 @@
             <span>
               Mustard
             </span>
-            <input type="checkbox" data-value="1">
+            <input type="checkbox" data-price="1">
             <span>
               add
             </span>
@@ -57,7 +57,7 @@
             <span>
               Tomato
             </span>
-            <input type="checkbox" data-value="1">
+            <input type="checkbox" data-price="1">
             <span>
               add
             </span>
@@ -67,7 +67,7 @@
             <span>
               Lettuce
             </span>
-            <input type="checkbox" data-value="1">
+            <input type="checkbox" data-price="1">
             <span>
               add
             </span>
@@ -77,7 +77,7 @@
             <span>
               Ketchup
             </span>
-            <input type="checkbox" data-value="1">
+            <input type="checkbox" data-price="1">
             <span>
               add
             </span>
@@ -90,7 +90,9 @@
           Discount Coupon
         </label>
         <input id="coupon" type="text" name="" value="" placeholder="Insert your coupon">
-        <input id="calculate" type="button" name="" value="calculate">
+        <div>
+          <input id="calculate" type="button" name="" value="calculate">
+        </div>
       </div>
 
     </main>
