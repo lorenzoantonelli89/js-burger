@@ -7,6 +7,7 @@
 
 body{
   background-color: #fdf5e4;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .center{
@@ -16,6 +17,10 @@ body{
 
 .marginlf{
   margin-left: 10%;
+}
+
+.bordeaux{
+  color: #e05a7c;
 }
 
 /* regole header */
@@ -56,6 +61,11 @@ main{
   padding: 0 20px;
 }
 
+.content-list li>input{
+  background-color: #bc3b59;
+  border: none;
+}
+
 /* regole calcolator */
 
 .content-totalcal>div{
@@ -65,8 +75,12 @@ main{
 }
 
 #coupon{
-  margin-left: 2%;
   width: 70%;
+  margin-left: 2%;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fdf5e4;
 }
 
 #calculate{
@@ -78,7 +92,7 @@ main{
 
 /* regole footer */
 footer{
-  min-height: 100px;
+  height: 100px;
   background-color: #bc3b59;
   color: #fff;
 }
@@ -86,6 +100,11 @@ footer{
 .content-price{
   display: flex;
   justify-content: space-between;
+  line-height: 100px;
+}
+
+.content-price>span{
+  display: block;
 }
 
 .content-price>div{

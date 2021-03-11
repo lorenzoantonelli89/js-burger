@@ -23,10 +23,21 @@ calculateBtn.addEventListener('click', function(){
 
           totalPrice += priceElem;
         }
-
       }
-      console.log(priceElem);
   }
+
+  var couponInsert = document.getElementById('coupon');
+  var arrCoupon = ['mcdonald', 'fiveguys', 'burgerking'];
+
+  for (var i = 0; i < arrCoupon.length; i++) {
+    var couponOk = arrCoupon[i];
+
+    if (couponInsert == couponOk) {
+      totalPrice = (totalPrice / 100 * 20);
+
+    }
+  }
+  console.log(totalPrice);
 
 
 
