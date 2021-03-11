@@ -74,7 +74,7 @@ main{
 }
 
 .content-list li>input{
-
+pointer-events: none;
 }
 
 
@@ -99,10 +99,13 @@ main{
 }
 
 #calculate{
+  font-size: 20px;
+  font-weight: bold;
   padding: 10px 25px;
   border: none;
   border-radius: 10px;
   background-color: #efba54;
+  outline: none;
 }
 
 /* regole footer */
