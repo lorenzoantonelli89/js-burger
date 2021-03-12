@@ -1,5 +1,4 @@
 
-
 var calculateBtn = document.getElementById('calculate');
 
 // evento al click del bottone calculate
@@ -26,21 +25,21 @@ calculateBtn.addEventListener('click', function(){
         }
 
       }
+      // array e ciclo per verificare se coupon inserito è valido
+        var couponInsert = document.getElementById('coupon').value;
+        var arrCoupon = ['mcdonald', 'fiveguys', 'burgerking'];
+
+        for (var i = 0; i < arrCoupon.length; i++) {
+
+          if (couponInsert == arrCoupon[i]) {
+            totalPrice = (totalPrice / 100 * 80).toFixed(2);
+
+          }
+
+        }
+        console.log(totalPrice);
+        document.getElementById('price').innerHTML = totalPrice;
   }
-// array e ciclo per verificare se coupon inserito è valido
-  var couponInsert = document.getElementById('coupon').value;
-  var arrCoupon = ['mcdonald', 'fiveguys', 'burgerking'];
-
-  for (var i = 0; i < arrCoupon.length; i++) {
-
-    if (couponInsert == arrCoupon[i]) {
-      totalPrice = (totalPrice / 100 * 80).toFixed(2);
-
-    }
-
-  }
-  console.log(totalPrice);
-  document.getElementById('price').innerHTML = totalPrice;
 
 });
 
